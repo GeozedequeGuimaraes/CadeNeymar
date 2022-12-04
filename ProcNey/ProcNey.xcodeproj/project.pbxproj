@@ -14,6 +14,12 @@
 		8E319577293A835B0073D0A1 /* RubikGlitch-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E319576293A835B0073D0A1 /* RubikGlitch-Regular.ttf */; };
 		8E31957A293A91070073D0A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E319579293A91070073D0A1 /* HomeView.swift */; };
 		8E31957D293AAB520073D0A1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E31957C293AAB520073D0A1 /* GameView.swift */; };
+		FCEA4FF0293BEBBC009BE1D5 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA4FEF293BEBBC009BE1D5 /* WinView.swift */; };
+		FCEA4FF2293BECA8009BE1D5 /* LoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA4FF1293BECA8009BE1D5 /* LoseView.swift */; };
+		FCEA4FF4293BFA89009BE1D5 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA4FF3293BFA89009BE1D5 /* AudioManager.swift */; };
+		FCEA4FF6293BFC74009BE1D5 /* vinheta_gol_do_brasil_1994_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCEA4FF5293BFC74009BE1D5 /* vinheta_gol_do_brasil_1994_.mp3 */; };
+		FCEA4FFA293C0215009BE1D5 /* ole.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCEA4FF9293C0215009BE1D5 /* ole.mp3 */; };
+		FCEA4FFC293C03A6009BE1D5 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCEA4FFB293C03A6009BE1D5 /* win.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		8E319578293A8DDD0073D0A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8E319579293A91070073D0A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8E31957C293AAB520073D0A1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		FCEA4FEF293BEBBC009BE1D5 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
+		FCEA4FF1293BECA8009BE1D5 /* LoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseView.swift; sourceTree = "<group>"; };
+		FCEA4FF3293BFA89009BE1D5 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		FCEA4FF5293BFC74009BE1D5 /* vinheta_gol_do_brasil_1994_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vinheta_gol_do_brasil_1994_.mp3; sourceTree = "<group>"; };
+		FCEA4FF9293C0215009BE1D5 /* ole.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ole.mp3; sourceTree = "<group>"; };
+		FCEA4FFB293C03A6009BE1D5 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +76,12 @@
 				8E31955A293A31970073D0A1 /* ContentView.swift */,
 				8E319579293A91070073D0A1 /* HomeView.swift */,
 				8E31957C293AAB520073D0A1 /* GameView.swift */,
+				FCEA4FEF293BEBBC009BE1D5 /* WinView.swift */,
+				FCEA4FF1293BECA8009BE1D5 /* LoseView.swift */,
+				FCEA4FF3293BFA89009BE1D5 /* AudioManager.swift */,
 				8E31955C293A31990073D0A1 /* Assets.xcassets */,
+				FCEA4FFB293C03A6009BE1D5 /* win.mp3 */,
+				FCEA4FF9293C0215009BE1D5 /* ole.mp3 */,
 				8E31955E293A31990073D0A1 /* Preview Content */,
 			);
 			path = ProcNey;
@@ -73,6 +90,7 @@
 		8E31955E293A31990073D0A1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				FCEA4FF5293BFC74009BE1D5 /* vinheta_gol_do_brasil_1994_.mp3 */,
 				8E31955F293A31990073D0A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -144,8 +162,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEA4FF6293BFC74009BE1D5 /* vinheta_gol_do_brasil_1994_.mp3 in Resources */,
 				8E319577293A835B0073D0A1 /* RubikGlitch-Regular.ttf in Resources */,
 				8E319560293A31990073D0A1 /* Preview Assets.xcassets in Resources */,
+				FCEA4FFC293C03A6009BE1D5 /* win.mp3 in Resources */,
+				FCEA4FFA293C0215009BE1D5 /* ole.mp3 in Resources */,
 				8E31955D293A31990073D0A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,10 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEA4FF0293BEBBC009BE1D5 /* WinView.swift in Sources */,
+				FCEA4FF4293BFA89009BE1D5 /* AudioManager.swift in Sources */,
 				8E31957A293A91070073D0A1 /* HomeView.swift in Sources */,
 				8E31955B293A31970073D0A1 /* ContentView.swift in Sources */,
 				8E31957D293AAB520073D0A1 /* GameView.swift in Sources */,
 				8E319559293A31970073D0A1 /* ProcNeyApp.swift in Sources */,
+				FCEA4FF2293BECA8009BE1D5 /* LoseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
